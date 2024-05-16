@@ -8,6 +8,11 @@
       "types": "./src/button.tsx",
       "import": "./dist/button.mjs",
       "require": "./dist/button.js"
+    },
+    "./a11y-button": {
+      "types": "./src/a11y-button.tsx",
+      "import": "./dist/a11y-button.mjs",
+      "require": "./dist/a11y-button.js"
     }
   },
   "scripts": {
