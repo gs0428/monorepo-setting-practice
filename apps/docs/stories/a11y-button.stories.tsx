@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { A11yButton } from "@acme/ui/a11y-button";
+import { withCssResources } from "@storybook/addon-cssresources";
 
 const meta: Meta<typeof A11yButton> = {
   component: A11yButton,
@@ -9,6 +10,16 @@ const meta: Meta<typeof A11yButton> = {
       options: ["button", "submit", "reset"],
     },
   },
+  parameters: {
+    cssresources: [
+      {
+        id: `darktheme`,
+        code: "<style>button { background-color: black; }</style>",
+        picked: false,
+      },
+    ],
+  },
+  decorators: [withCssResources],
 };
 
 export default meta;
@@ -27,7 +38,7 @@ export const Secondary: Story = {
     children: "Hello",
     type: "button",
     style: {
-      color: "red",
+      color: "grey",
       border: "1px solid gray",
       padding: 10,
       borderRadius: 10,
