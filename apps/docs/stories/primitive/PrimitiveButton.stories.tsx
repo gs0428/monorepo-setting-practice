@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import PrimitiveButton from "@acme/ui/primitive/primitive-button";
+import PrimitiveButton from "@acme/ui/primitive/button";
 
 const meta = {
-  title: "Primitive-UI/PrimitiveButton",
+  title: "Primitive-UI/Button",
   // 컴포넌트명 작성
   component: PrimitiveButton,
   tags: ["autodocs"],
