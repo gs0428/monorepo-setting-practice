@@ -22,6 +22,7 @@ export default function (plop) {
     actions(data) {
       const { isPrimitive } = data;
       const type = isPrimitive ? "primitive" : "themed";
+      const pascalCaseType = isPrimitive ? "Primitive" : "Themed";
       const existPath = path.resolve(cwd(), "../..", `apps/docs/stories/${type}`);
 
       // 경로에 primitive 혹은 themed 폴더가 존재하는지 확인 후
@@ -33,7 +34,7 @@ export default function (plop) {
       // primitive 혹은 themed일 때 story 저장 경로와 hbs 파일 구분
       const action = {
         type: "add",
-        path: `../../../apps/docs/stories/${type}/{{pascalCase name}}.stories.tsx`,
+        path: `../../../apps/docs/stories/${type}/${pascalCaseType}{{pascalCase name}}.stories.tsx`,
         templateFile: `templates/story-${type}.hbs`,
       };
 
