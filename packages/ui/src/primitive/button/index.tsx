@@ -1,4 +1,4 @@
-import "../global.css";
+import "../../global.css";
 
 export interface PrimitiveButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
