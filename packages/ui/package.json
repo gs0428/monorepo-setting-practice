@@ -4,15 +4,15 @@
   "sideEffects": false,
   "license": "MIT",
   "exports": {
-    "./button": {
-      "types": "./src/button.tsx",
-      "import": "./dist/button.mjs",
-      "require": "./dist/button.js"
+    "./primitive/primitive-button": {
+      "types": "./src/primitive/primitive-button.tsx",
+      "import": "./dist/primitive/primitive-button.mjs",
+      "require": "./dist/primitive/primitive-button.js"
     },
-    "./a11y-button": {
-      "types": "./src/a11y-button.tsx",
-      "import": "./dist/a11y-button.mjs",
-      "require": "./dist/a11y-button.js"
+    "./themed/themed-button": {
+      "types": "./src/themed/themed-button.tsx",
+      "import": "./dist/themed/themed-button.mjs",
+      "require": "./dist/themed/themed-button.js"
     }
   },
   "scripts": {
