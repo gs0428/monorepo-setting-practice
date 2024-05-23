@@ -20,9 +20,11 @@
     "dev": "tsup --watch",
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "plop": "plop --plopfile ./codegen/plop.js"
+    "plop": "plop --plopfile ./codegen/plop.js",
+    "prepare": "panda codegen"
   },
   "devDependencies": {
+    "@pandacss/dev": "^0.39.1",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "^18.2.61",
