@@ -8,7 +8,7 @@ import fs from "node:fs";
 const generateComponent = (name, svg) => {
   const pascalCase = name[0].toUpperCase() + name.split("").splice(1).join("");
   fs.writeFile(
-    `../../icon/${name}.tsx`,
+    `./src/icons/${name}.tsx`,
     `function ${pascalCase}() {
     return (
     ${svg}

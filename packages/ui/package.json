@@ -18,7 +18,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "plop": "plop --plopfile ./codegen/story/plop.js",
     "prepare": "panda codegen",
-    "generate:icon": "node generateIconComp.js"
+    "generate:icon": "node ./codegen/icons/index.js"
   },
   "devDependencies": {
     "@pandacss/dev": "^0.39.1",
