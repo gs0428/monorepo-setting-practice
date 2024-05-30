@@ -20,11 +20,6 @@ async function main() {
 
     // 모든 svg 파일을 컴포넌트로 생성
     await Promise.all(Object.entries(svgs).map(([name, value]) => generateComponent(name, value.svg)));
-
-    // icon에 대한 컴포넌트까지는 생성 완료.
-    // 현재 방법으로는 size, fill props를 전달하는 방법이 없음
-    // 생성 후 스토리북 생성까지 어떻게 할 것인가?
-    // plop과 hbs 적절히 써보기..
   } catch (err) {
     console.error(err);
   }
