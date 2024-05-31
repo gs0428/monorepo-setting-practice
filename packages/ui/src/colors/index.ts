@@ -9,6 +9,14 @@ const colors = {
   }
 } as const;
     
-export type ColorType = keyof typeof colors;
+type ColorKey = keyof typeof colors;
+
+type ColorType<T extends ColorKey> = {
+  [Key in keyof (typeof colors)[T]]: (typeof colors)[T][Key];
+};
+
+export type ColorValue = {
+  [C in ColorKey]: ColorType<C>;
+}[ColorKey][keyof ColorType<ColorKey>];
 
 export default colors;
